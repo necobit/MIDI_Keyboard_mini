@@ -170,7 +170,7 @@ void loop()
     n[18] = 0;
   }
 
-  //チャンネル変更
+  //モジュレーション
   if (digitalRead(kp[19]) == LOW && n[19] == 0) {
     if (chatak[19] > chata) {
       MIDI.sendControlChange(1, 127, ch);
